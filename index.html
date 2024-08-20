@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Web IDE</title>
+    <!-- Include the latest PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PyScript   
+        IDE</h1>
+       
+           <div id="editor">
+               <textarea id="code-editor"></textarea>
+           </div>
+       
+           <button id="run-button">Run</button>
+       
+           <div id="output">
+               <h2>Output:</h2>
+               <pre id="output-console"></pre>
+           </div>
+       
+     <!--PyScript  -->
+     <py-script>
+        for i in range(10):
+            print(i,i)
+     </py-script>
+     <py-repl></py-repl>
+       
+           <script src="script.js"></script>
+    <!-- Include the latest PyScript JS -->
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
